@@ -33,8 +33,7 @@
 	"dependencies": {
 		"define-properties": "^1.0.2",
 		"es-abstract": "^1.2.1",
-		"function-bind": "^1.0.2",
-		"string-at": "^1.0.1"
+		"function-bind": "^1.0.2"
 	},
 	"devDependencies": {
 		"tape": "^4.0.0",
