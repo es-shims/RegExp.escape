@@ -22,7 +22,7 @@ Use it as a standalone function, or call its `shim` method to install it as a po
 var escape = require('regexp.escape');
 var assert = require('assert');
 
-var str = 'hello. how are you?;
+var str = 'hello. how are you?';
 var regex = new RegExp(escape(str), 'g');
 assert.equal(String(regex), '/hello\. how are you\?/g');
 ```
