@@ -1,6 +1,6 @@
 {
 	"name": "regexp.escape",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "Jordan Harband",
 	"description": "A robust ES3-compatible polyfill for the ES7 `RegExp.escape` proposal - see https://github.com/benjamingr/RexExp.escape/",
 	"license": "MIT",
