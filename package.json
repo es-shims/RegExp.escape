@@ -1,0 +1,73 @@
+{
+	"name": "regexp.escape",
+	"version": "0.0.0",
+	"author": "Jordan Harband",
+	"description": "A robust ES3-compatible polyfill for the ES7 `RegExp.escape` proposal - see https://github.com/benjamingr/RexExp.escape/",
+	"license": "MIT",
+	"main": "index.js",
+	"scripts": {
+		"test": "npm run lint && npm run test:shimmed && npm run test:module && npm run security",
+		"test:shimmed": "node --es-staging test/shimmed.js",
+		"test:module": "node --es-staging test/index.js",
+		"coverage": "covert test/*.js",
+		"coverage-quiet": "covert test/*.js --quiet",
+		"lint": "npm run jscs && npm run eslint",
+		"jscs": "jscs test/*.js *.js",
+		"eslint": "eslint test/*.js *.js",
+		"security": "nsp package"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/ljharb/regexp.escape.git"
+	},
+	"keywords": [
+		"RegExp",
+		"regex",
+		"regular expression",
+		"escape",
+		"ES7",
+		"ecmascript",
+		"polyfill",
+		"shim"
+	],
+	"dependencies": {
+		"define-properties": "^1.0.2",
+		"es-abstract": "^1.2.1",
+		"function-bind": "^1.0.2",
+		"string-at": "^1.0.1"
+	},
+	"devDependencies": {
+		"tape": "^4.0.0",
+		"covert": "^1.1.0",
+		"jscs": "^1.13.1",
+		"nsp": "^1.0.1",
+		"eslint": "^0.22.1",
+		"semver": "^4.3.6",
+		"replace": "^0.3.0",
+		"es5-shim": "^4.1.6",
+		"es6-shim": "^0.32.0",
+		"foreach": "^2.0.5"
+	},
+	"testling": {
+		"files": ["test/index.js", "test/shimmed.js"],
+		"browsers": [
+			"iexplore/6.0..latest",
+			"firefox/3.0..6.0",
+			"firefox/15.0..latest",
+			"firefox/nightly",
+			"chrome/4.0..10.0",
+			"chrome/20.0..latest",
+			"chrome/canary",
+			"opera/10.0..latest",
+			"opera/next",
+			"safari/4.0..latest",
+			"ipad/6.0..latest",
+			"iphone/6.0..latest",
+			"android-browser/4.2"
+		]
+	},
+	"engines": {
+		"node": ">= 0.4"
+	}
+}
+
