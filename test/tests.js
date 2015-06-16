@@ -20,4 +20,16 @@ module.exports = function (escape, t) {
 		st.equal(escape('\uD834\uDF06.'), '\uD834\uDF06\\.');
 		st.end();
 	});
+
+	t.test('non-strings', function (st) {
+		var strings = [
+			'hello there',
+			'^$\\.*+?()[]{}|',
+			'\uD834\uDF06.'
+		];
+		forEach(strings, function (str) {
+			st.equal(escape({ toString: function () { return str; } }), escape(str));
+		});
+		st.end();
+	});
 };
