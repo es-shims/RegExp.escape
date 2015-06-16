@@ -40,15 +40,18 @@
 		"covert": "^1.1.0",
 		"jscs": "^1.13.1",
 		"nsp": "^1.0.1",
-		"eslint": "^0.22.1",
+		"eslint": "^0.23.0",
 		"semver": "^4.3.6",
 		"replace": "^0.3.0",
 		"es5-shim": "^4.1.6",
-		"es6-shim": "^0.32.0",
+		"es6-shim": "^0.32.1",
 		"foreach": "^2.0.5"
 	},
 	"testling": {
-		"files": ["test/index.js", "test/shimmed.js"],
+		"files": [
+			"test/index.js",
+			"test/shimmed.js"
+		],
 		"browsers": [
 			"iexplore/6.0..latest",
 			"firefox/3.0..6.0",
