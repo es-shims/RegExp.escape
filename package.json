@@ -31,7 +31,7 @@
 		"shim"
 	],
 	"dependencies": {
-		"define-properties": "^1.0.2",
+		"define-properties": "^1.1.1",
 		"es-abstract": "^1.2.1",
 		"function-bind": "^1.0.2"
 	},
