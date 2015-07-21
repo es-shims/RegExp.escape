@@ -36,15 +36,15 @@
 		"function-bind": "^1.0.2"
 	},
 	"devDependencies": {
-		"tape": "^4.0.0",
+		"tape": "^4.0.1",
 		"covert": "^1.1.0",
 		"jscs": "^1.13.1",
-		"nsp": "^1.0.1",
-		"eslint": "^0.23.0",
-		"semver": "^4.3.6",
+		"nsp": "^1.0.3",
+		"eslint": "^1.0.0-rc-1",
+		"semver": "^5.0.1",
 		"replace": "^0.3.0",
-		"es5-shim": "^4.1.6",
-		"es6-shim": "^0.32.1",
+		"es5-shim": "^4.1.10",
+		"es6-shim": "^0.32.2",
 		"foreach": "^2.0.5"
 	},
 	"testling": {

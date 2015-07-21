@@ -1,3 +1,5 @@
+'use strict';
+
 var forEach = require('foreach');
 
 module.exports = function (escape, t) {
