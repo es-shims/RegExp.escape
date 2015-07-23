@@ -2,8 +2,8 @@
 
 require('es5-shim');
 require('es6-shim');
-var escape = require('../');
-escape.shim();
+var escapeShim = require('../');
+escapeShim.shim();
 
 var test = require('tape');
 var defineProperties = require('define-properties');
