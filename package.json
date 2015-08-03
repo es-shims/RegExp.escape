@@ -32,20 +32,20 @@
 	],
 	"dependencies": {
 		"define-properties": "^1.1.1",
-		"es-abstract": "^1.2.1",
+		"es-abstract": "^1.2.2",
 		"function-bind": "^1.0.2"
 	},
 	"devDependencies": {
 		"tape": "^4.0.1",
 		"covert": "^1.1.0",
-		"jscs": "^1.13.1",
+		"jscs": "^2.0.0",
 		"nsp": "^1.0.3",
-		"eslint": "^1.0.0-rc-2",
-		"@ljharb/eslint-config": "^1.0.3",
+		"eslint": "^1.0.0",
+		"@ljharb/eslint-config": "^1.0.4",
 		"semver": "^5.0.1",
 		"replace": "^0.3.0",
 		"es5-shim": "^4.1.10",
-		"es6-shim": "^0.32.2",
+		"es6-shim": "^0.33.0",
 		"foreach": "^2.0.5"
 	},
 	"testling": {
