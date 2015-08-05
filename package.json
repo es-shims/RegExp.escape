@@ -36,7 +36,7 @@
 		"function-bind": "^1.0.2"
 	},
 	"devDependencies": {
-		"tape": "^4.0.1",
+		"tape": "^4.0.2",
 		"covert": "^1.1.0",
 		"jscs": "^2.0.0",
 		"nsp": "^1.0.3",
