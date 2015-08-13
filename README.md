@@ -31,7 +31,7 @@ assert.equal(String(regex), '/hello\. how are you\?/g');
 Simply clone the repo, `npm install`, and run `npm test`
 
 [1]: https://npmjs.org/package/regexp.escape
-[2]: http://vb.teelaun.ch/ljharb/regexp.escape.svg
+[2]: http://versionbadg.es/ljharb/regexp.escape.svg
 [3]: https://travis-ci.org/ljharb/regexp.escape.svg
 [4]: https://travis-ci.org/ljharb/regexp.escape
 [5]: https://david-dm.org/ljharb/regexp.escape.svg
