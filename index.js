@@ -1,7 +1,7 @@
 'use strict';
 
 var define = require('define-properties');
-var ES = require('es-abstract/es7');
+var ES = require('es-abstract/es2018');
 var bind = require('function-bind');
 var replace = bind.call(Function.call, String.prototype.replace);
 var syntaxChars = /[\^\$\\\.\*\+\?\(\)\[\]\{\}\|]/g;
