@@ -5,5 +5,14 @@
 
 	"rules": {
 		"new-cap": [2, { "capIsNewExceptions": ["ToString"] }]
-	}
+	},
+
+	"overrides": [
+		{
+			"files": "test/**",
+			"rules": {
+				"global-require": 0,
+			},
+		},
+	],
 }
