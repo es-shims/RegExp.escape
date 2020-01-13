@@ -1,6 +1,6 @@
 {
 	"name": "regexp.escape",
-	"version": "1.0.2",
+	"version": "1.1.0",
 	"author": "Jordan Harband",
 	"funding": {
 		"url": "https://github.com/sponsors/ljharb"
