@@ -1,13 +1,13 @@
 'use strict';
 
 var define = require('define-properties');
-var ES = require('es-abstract/es2018');
-var bind = require('function-bind');
-var replace = bind.call(Function.call, String.prototype.replace);
+var ToString = require('es-abstract/2019/ToString');
+var callBound = require('es-abstract/helpers/callBound');
+var $replace = callBound('String.prototype.replace');
 var syntaxChars = /[\^$\\.*+?()[\]{}|]/g;
 
 var escapeShim = function escape(S) {
-	return replace(ES.ToString(S), syntaxChars, '\\$&');
+	return $replace(ToString(S), syntaxChars, '\\$&');
 };
 
 define(escapeShim, {
