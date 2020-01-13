@@ -1,23 +1,19 @@
 'use strict';
 
 var define = require('define-properties');
-var ToString = require('es-abstract/2019/ToString');
-var callBound = require('es-abstract/helpers/callBound');
-var $replace = callBound('String.prototype.replace');
-var syntaxChars = /[\^$\\.*+?()[\]{}|]/g;
+var callBind = require('es-abstract/helpers/callBind');
 
-var escapeShim = function escape(S) {
-	return $replace(ToString(S), syntaxChars, '\\$&');
-};
+var implementation = require('./implementation');
+var getPolyfill = require('./polyfill');
+var shim = require('./shim');
 
-define(escapeShim, {
-	method: escapeShim,
-	shim: function shimRegExpEscape() {
-		define(RegExp, {
-			escape: escapeShim
-		});
-		return RegExp.escape;
-	}
+var bound = callBind(implementation, null);
+
+define(bound, {
+	getPolyfill: getPolyfill,
+	implementation: implementation,
+	method: implementation, // TODO: remove at semver-major
+	shim: shim
 });
 
-module.exports = escapeShim;
+module.exports = bound;
