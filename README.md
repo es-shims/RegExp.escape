@@ -8,8 +8,6 @@
 
 [![npm badge][11]][1]
 
-[![browser support][9]][10]
-
 A robust & optimized ES3-compatible polyfill for [the `RegExp.escape` proposal for ECMAScript 7](https://github.com/benjamingr/RexExp.escape/).
 
 Use it to safely escape RegExp special tokens for use in `new RegExp`.
@@ -31,15 +29,13 @@ assert.equal(String(regex), '/hello\. how are you\?/g');
 Simply clone the repo, `npm install`, and run `npm test`
 
 [1]: https://npmjs.org/package/regexp.escape
-[2]: http://versionbadg.es/ljharb/regexp.escape.svg
-[3]: https://travis-ci.org/ljharb/regexp.escape.svg
-[4]: https://travis-ci.org/ljharb/regexp.escape
-[5]: https://david-dm.org/ljharb/regexp.escape.svg
-[6]: https://david-dm.org/ljharb/regexp.escape
-[7]: https://david-dm.org/ljharb/regexp.escape/dev-status.svg
-[8]: https://david-dm.org/ljharb/regexp.escape#info=devDependencies
-[9]: https://ci.testling.com/ljharb/regexp.escape.png
-[10]: https://ci.testling.com/ljharb/regexp.escape
+[2]: http://versionbadg.es/es-shims/regexp.escape.svg
+[3]: https://travis-ci.org/es-shims/regexp.escape.svg
+[4]: https://travis-ci.org/es-shims/regexp.escape
+[5]: https://david-dm.org/es-shims/regexp.escape.svg
+[6]: https://david-dm.org/es-shims/regexp.escape
+[7]: https://david-dm.org/es-shims/regexp.escape/dev-status.svg
+[8]: https://david-dm.org/es-shims/regexp.escape#info=devDependencies
 [11]: https://nodei.co/npm/regexp.escape.png?downloads=true&stars=true
 [license-image]: http://img.shields.io/npm/l/regexp.escape.svg
 [license-url]: LICENSE

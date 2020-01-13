@@ -24,7 +24,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/ljharb/regexp.escape.git"
+		"url": "git://github.com/es-shims/regexp.escape.git"
 	},
 	"keywords": [
 		"RegExp",
