@@ -45,8 +45,8 @@
 	"devDependencies": {
 		"@es-shims/api": "^2.2.3",
 		"@ljharb/eslint-config": "^21.0.0",
-		"aud": "^2.0.0",
-		"auto-changelog": "^1.16.4",
+		"aud": "^2.0.1",
+		"auto-changelog": "^2.4.0",
 		"covert": "^1.1.1",
 		"es5-shim": "^4.6.7",
 		"es6-shim": "^0.35.6",
@@ -54,7 +54,7 @@
 		"foreach": "^2.0.6",
 		"in-publish": "^2.0.1",
 		"safe-publish-latest": "^2.0.0",
-		"tape": "^5.6.0"
+		"tape": "^5.6.1"
 	},
 	"testling": {
 		"files": [
@@ -85,6 +85,7 @@
 		"template": "keepachangelog",
 		"unreleased": false,
 		"commitLimit": false,
-		"backfillLimit": false
+		"backfillLimit": false,
+		"hideCredit": true
 	}
 }
