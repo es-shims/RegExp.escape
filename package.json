@@ -39,8 +39,8 @@
 	],
 	"dependencies": {
 		"call-bind": "^1.0.2",
-		"define-properties": "^1.1.4",
-		"es-abstract": "^1.20.5",
+		"define-properties": "^1.2.0",
+		"es-abstract": "^1.21.1",
 		"function-bind": "^1.1.1"
 	},
 	"devDependencies": {
