@@ -9,7 +9,8 @@
 	"license": "MIT",
 	"main": "index.js",
 	"scripts": {
-		"prepublish": "safe-publish-latest",
+		"prepublishOnly": "safe-publish-latest",
+		"prepublish": "not-in-publish || npm run prepublishOnly",
 		"pretest": "npm run lint",
 		"pretests-only": "es-shim-api --bound",
 		"tests-only": "npm run test:shimmed && npm run test:module",
@@ -40,8 +41,7 @@
 	"dependencies": {
 		"call-bind": "^1.0.2",
 		"define-properties": "^1.2.0",
-		"es-abstract": "^1.22.1",
-		"function-bind": "^1.1.1"
+		"es-abstract": "^1.22.1"
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.4.2",
