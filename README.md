@@ -20,8 +20,9 @@ var escape = require('regexp.escape');
 var assert = require('assert');
 
 var str = 'hello. how are you?';
-var regex = new RegExp(escape(str), 'g');
-assert.equal(String(regex), '/hello\. how are you\?/g');
+var regex = new RegExp('^' + escape(str) + '$');
+assert.match(str, regex);
+assert.doesNotMatch('hello, how are you!', regex);
 ```
 
 ## Tests
