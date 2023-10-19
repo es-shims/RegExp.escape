@@ -1,12 +1,11 @@
-# regexp.escape <sup>[![Version Badge][2]][1]</sup>
+# regexp.escape <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
 
-[![Build Status][3]][4]
-[![dependency status][5]][6]
-[![dev dependency status][7]][8]
+[![github actions][actions-image]][actions-url]
+[![coverage][codecov-image]][codecov-url]
 [![License][license-image]][license-url]
 [![Downloads][downloads-image]][downloads-url]
 
-[![npm badge][11]][1]
+[![npm badge][npm-badge-png]][package-url]
 
 A robust & optimized ES3-compatible polyfill for [the `RegExp.escape` proposal for ECMAScript 7](https://github.com/benjamingr/RexExp.escape/).
 
@@ -28,16 +27,18 @@ assert.equal(String(regex), '/hello\. how are you\?/g');
 ## Tests
 Simply clone the repo, `npm install`, and run `npm test`
 
-[1]: https://npmjs.org/package/regexp.escape
-[2]: http://versionbadg.es/es-shims/regexp.escape.svg
-[3]: https://travis-ci.org/es-shims/regexp.escape.svg
-[4]: https://travis-ci.org/es-shims/regexp.escape
-[5]: https://david-dm.org/es-shims/regexp.escape.svg
-[6]: https://david-dm.org/es-shims/regexp.escape
-[7]: https://david-dm.org/es-shims/regexp.escape/dev-status.svg
-[8]: https://david-dm.org/es-shims/regexp.escape#info=devDependencies
-[11]: https://nodei.co/npm/regexp.escape.png?downloads=true&stars=true
-[license-image]: http://img.shields.io/npm/l/regexp.escape.svg
+[package-url]: https://npmjs.org/package/regexp.escape
+[npm-version-svg]: https://versionbadg.es/es-shims/RegExp.escape.svg
+[deps-svg]: https://david-dm.org/es-shims/RegExp.escape.svg
+[deps-url]: https://david-dm.org/es-shims/RegExp.escape
+[dev-deps-svg]: https://david-dm.org/es-shims/RegExp.escape/dev-status.svg
+[dev-deps-url]: https://david-dm.org/es-shims/RegExp.escape#info=devDependencies
+[npm-badge-png]: https://nodei.co/npm/regexp.escape.png?downloads=true&stars=true
+[license-image]: https://img.shields.io/npm/l/regexp.escape.svg
 [license-url]: LICENSE
-[downloads-image]: http://img.shields.io/npm/dm/regexp.escape.svg
-[downloads-url]: http://npm-stat.com/charts.html?package=regexp.escape
+[downloads-image]: https://img.shields.io/npm/dm/regexp.escape.svg
+[downloads-url]: https://npm-stat.com/charts.html?package=regexp.escape
+[codecov-image]: https://codecov.io/gh/es-shims/RegExp.escape/branch/main/graphs/badge.svg
+[codecov-url]: https://app.codecov.io/gh/es-shims/RegExp.escape/
+[actions-image]: https://img.shields.io/endpoint?url=https://github-actions-badge-u3jn4tfpocch.runkit.sh/es-shims/RegExp.escape
+[actions-url]: https://github.com/es-shims/RegExp.escape/actions
