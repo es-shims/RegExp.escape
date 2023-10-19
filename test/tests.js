@@ -11,7 +11,8 @@ module.exports = function (escape, t) {
 			'',
 			'hi. how are you?',
 			'^$\\.*+?()[]{}|',
-			'\uD834\uDF06.'
+			'\uD834\uDF06.',
+			'123 Fake St.'
 		];
 
 		forEach(strings, function (str) {
