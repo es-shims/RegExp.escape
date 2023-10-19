@@ -1,6 +1,6 @@
 'use strict';
 
-var forEach = require('foreach');
+var forEach = require('for-each');
 
 module.exports = function (escape, t) {
 	t.test('simple strings', function (st) {
