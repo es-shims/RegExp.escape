@@ -4,7 +4,14 @@
 	"extends": "@ljharb",
 
 	"rules": {
-		"new-cap": [2, { "capIsNewExceptions": ["ToString"] }]
+		"new-cap": [2, {
+			"capIsNewExceptions": [
+				"CodePointsToString",
+				"StringToCodePoints",
+				"ToString",
+				"UTF16EncodeCodePoint",
+			],
+		}],
 	},
 
 	"overrides": [
