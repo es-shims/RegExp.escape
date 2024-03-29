@@ -43,9 +43,9 @@
 		"safe-regex-test": "^1.0.0"
 	},
 	"devDependencies": {
-		"@es-shims/api": "^2.4.2",
+		"@es-shims/api": "^2.5.0",
 		"@ljharb/eslint-config": "^21.1.0",
-		"aud": "^2.0.3",
+		"aud": "^2.0.4",
 		"auto-changelog": "^2.4.0",
 		"es5-shim": "^4.6.7",
 		"es6-shim": "^0.35.8",
@@ -54,7 +54,7 @@
 		"in-publish": "^2.0.1",
 		"nyc": "^10.3.2",
 		"safe-publish-latest": "^2.0.0",
-		"tape": "^5.7.2"
+		"tape": "^5.7.5"
 	},
 	"testling": {
 		"files": [
