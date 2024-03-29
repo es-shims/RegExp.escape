@@ -1,8 +1,8 @@
 'use strict';
 
 // var CodePointsToString = require('es-abstract/2023/CodePointsToString');
-var ToString = require('es-abstract/2023/ToString');
-var StringToCodePoints = require('es-abstract/2023/StringToCodePoints');
+var ToString = require('es-abstract/2024/ToString');
+var StringToCodePoints = require('es-abstract/2024/StringToCodePoints');
 // var UTF16EncodeCodePoint = require('es-abstract/2023/UTF16EncodeCodePoint');
 var regexTester = require('safe-regex-test');
 var forEach = require('for-each');
