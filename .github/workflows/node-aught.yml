@@ -10,10 +10,3 @@ jobs:
       type: minors
       command: npm run tests-only
       skip-ls-check: true # io.js's npm can't handle `@types/*` deps in `npm ls`
-
-  node:
-    name: 'node < 10'
-    needs: [tests]
-    runs-on: ubuntu-latest
-    steps:
-      - run: 'echo tests completed'
