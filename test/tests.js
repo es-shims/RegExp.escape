@@ -9,7 +9,7 @@ module.exports = function (escape, t) {
 			'The Quick Brown Fox',
 			'hello there',
 			'',
-			'hi. how are you?',
+			'hi. how are you? 💩',
 			'^$\\.*+?()[]{}|',
 			'\uD834\uDF06.',
 			'123 Fake St.'
@@ -20,8 +20,11 @@ module.exports = function (escape, t) {
 			st.match(str, regex, inspect(str) + ' escapes to ' + inspect(regex) + ', which matches itself');
 
 			var nonStr = { toString: function () { return str; } };
-			var nonStrRegex = new RegExp('^' + escape(nonStr) + '$');
-			st.match(String(nonStr), nonStrRegex, inspect(nonStr) + ' escapes to ' + inspect(nonStrRegex) + ', which matches itself');
+			st['throws'](
+				function () { escape(nonStr); },
+				TypeError,
+				'does not coerce to string'
+			);
 		});
 
 		st.end();

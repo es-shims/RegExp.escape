@@ -4,22 +4,19 @@
 	"extends": "@ljharb",
 
 	"rules": {
-		"new-cap": [2, {
+		"id-length": "off",
+		"new-cap": ["error", {
 			"capIsNewExceptions": [
-				"CodePointsToString",
 				"StringToCodePoints",
-				"ToString",
 				"UTF16EncodeCodePoint",
+
+				"EncodeForRegExpEscape",
+				"NumberToString",
+				"StringIndexOf",
+				"StringPad",
+				"UnicodeEscape",
+				"UTF16EncodeCodePoint"
 			],
 		}],
 	},
-
-	"overrides": [
-		{
-			"files": "test/**",
-			"rules": {
-				"global-require": 0,
-			},
-		},
-	],
 }

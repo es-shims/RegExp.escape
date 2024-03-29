@@ -1,42 +1,46 @@
 'use strict';
 
-// var CodePointsToString = require('es-abstract/2023/CodePointsToString');
-var ToString = require('es-abstract/2024/ToString');
+var EncodeForRegExpEscape = require('./aos/EncodeForRegExpEscape');
 var StringToCodePoints = require('es-abstract/2024/StringToCodePoints');
-// var UTF16EncodeCodePoint = require('es-abstract/2023/UTF16EncodeCodePoint');
+
 var regexTester = require('safe-regex-test');
 var forEach = require('for-each');
 
-var callBound = require('call-bind/callBound');
-
-var $indexOf = callBound('Array.prototype.indexOf');
-var $join = callBound('Array.prototype.join');
-var $push = callBound('Array.prototype.push');
-
-var asciiPunctuators = "(){}[]|,.?*+-^$=<>\\/#&!%:;@~'\"`";
+var $TypeError = require('es-errors/type');
 
 var isDecimalDigit = regexTester(/^\d$/);
-var isWhiteSpace = regexTester(/^\s$/);
+
+var callBound = require('call-bind/callBound');
+
+var $charCodeAt = callBound('String.prototype.charCodeAt');
+var codePointStringToNum = function codePointStringToNumber(c) {
+	var first = $charCodeAt(c, 0);
+	if (first < 0xD800 || first > 0xDBFF || c.length === 1) {
+		return first;
+	}
+	var second = $charCodeAt(c, 1);
+	if (second < 0xDC00 || second > 0xDFFF) {
+		return first;
+	}
+	return ((first - 0xD800) * 1024) + (second - 0xDC00) + 0x10000;
+};
 
 module.exports = function escape(S) {
-	var str = ToString(S); // step 1
+	if (typeof S !== 'string') {
+		throw new $TypeError('`S` must be a String'); // step 1
+	}
 
-	var cpList = StringToCodePoints(str); // step 2
+	var escaped = ''; // step 2
 
-	var toEscape = StringToCodePoints(asciiPunctuators); // step 3
+	var cpList = StringToCodePoints(S); // step 3
 
-	var escapedList = []; // step 4
-
-	forEach(cpList, function (c) { // step 5
-		if (escapedList.length === 0 && isDecimalDigit(c)) { // step 5.a
-			$push(escapedList, '\u005c', '\u0078', '\u0033'); // step 5.a.i - 5.a.iii
-		} else if ($indexOf(toEscape, c) > -1 || isWhiteSpace(c)) { // step 5.b
-			$push(escapedList, '\u005c'); // step 5.b.i
+	forEach(cpList, function (c) { // step 4
+		if (escaped === '' && isDecimalDigit(c)) { // step 4.a
+			escaped += '\\x3' + c; // step 4.a.i
+		} else { // step 4.b
+			escaped += EncodeForRegExpEscape(codePointStringToNum(c)); // step 4.b.i
 		}
-		// c. Append the elements of UTF16EncodeCodePoint(c) to escapedList.
-		$push(escapedList, c);
 	});
 
-	// return CodePointsToString(escapedList); // step 6
-	return $join(escapedList, '');
+	return escaped; // step 5
 };
