@@ -5,7 +5,7 @@
 	"funding": {
 		"url": "https://github.com/sponsors/ljharb"
 	},
-	"description": "A robust ES3-compatible polyfill for the ES7 `RegExp.escape` proposal - see https://github.com/benjamingr/RexExp.escape/",
+	"description": "A robust ES3-compatible polyfill for the `RegExp.escape` proposal - see https://github.com/tc39/proposal-regex-escaping",
 	"license": "MIT",
 	"main": "index.js",
 	"scripts": {
@@ -23,14 +23,13 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/es-shims/regexp.escape.git"
+		"url": "git://github.com/es-shims/RegExp.escape.git"
 	},
 	"keywords": [
 		"RegExp",
 		"regex",
 		"regular expression",
 		"escape",
-		"ES7",
 		"ecmascript",
 		"polyfill",
 		"shim",

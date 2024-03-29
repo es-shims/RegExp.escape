@@ -7,7 +7,7 @@
 
 [![npm badge][npm-badge-png]][package-url]
 
-A robust & optimized ES3-compatible polyfill for [the `RegExp.escape` proposal for ECMAScript 7](https://github.com/benjamingr/RexExp.escape/).
+A robust & optimized ES3-compatible polyfill for [the `RegExp.escape` proposal](https://github.com/tc39/proposal-regex-escaping).
 
 Use it to safely escape RegExp special tokens for use in `new RegExp`.
 
