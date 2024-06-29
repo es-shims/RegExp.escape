@@ -45,7 +45,7 @@
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.5.0",
-		"@ljharb/eslint-config": "^21.1.0",
+		"@ljharb/eslint-config": "^21.1.1",
 		"aud": "^2.0.4",
 		"auto-changelog": "^2.4.0",
 		"es5-shim": "^4.6.7",
@@ -54,9 +54,9 @@
 		"evalmd": "^0.0.19",
 		"in-publish": "^2.0.1",
 		"nyc": "^10.3.2",
-		"object-inspect": "^1.13.1",
+		"object-inspect": "^1.13.2",
 		"safe-publish-latest": "^2.0.0",
-		"tape": "^5.7.5"
+		"tape": "^5.8.1"
 	},
 	"testling": {
 		"files": [
