@@ -1,6 +1,7 @@
 'use strict';
 
 var EncodeForRegExpEscape = require('./aos/EncodeForRegExpEscape');
+var NumberToString = require('es-abstract/2024/Number/toString');
 var StringToCodePoints = require('es-abstract/2024/StringToCodePoints');
 
 var regexTester = require('safe-regex-test');
@@ -8,7 +9,7 @@ var forEach = require('for-each');
 
 var $TypeError = require('es-errors/type');
 
-var isDecimalDigit = regexTester(/^\d$/);
+var isDecimalDigitOrASCIILetter = regexTester(/^[\da-zA-Z]$/);
 
 var callBound = require('call-bind/callBound');
 
@@ -35,8 +36,10 @@ module.exports = function escape(S) {
 	var cpList = StringToCodePoints(S); // step 3
 
 	forEach(cpList, function (c) { // step 4
-		if (escaped === '' && isDecimalDigit(c)) { // step 4.a
-			escaped += '\\x3' + c; // step 4.a.i
+		if (escaped === '' && isDecimalDigitOrASCIILetter(c)) { // step 4.a
+			var hex = NumberToString(codePointStringToNum(c), 16); // step 4.a.iii
+
+			escaped += '\\x' + hex; // step 4.a.v
 		} else { // step 4.b
 			escaped += EncodeForRegExpEscape(codePointStringToNum(c)); // step 4.b.i
 		}
