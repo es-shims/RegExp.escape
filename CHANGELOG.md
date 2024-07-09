@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.0.1](https://github.com/es-shims/RegExp.escape/compare/v2.0.0...v2.0.1) - 2024-07-08
+
+### Commits
+
+- [meta] use `npmignore` [`f1eaf8c`](https://github.com/es-shims/RegExp.escape/commit/f1eaf8c05d8907359331247cd071054d0d17072f)
+- [meta] add `exports` [`5439125`](https://github.com/es-shims/RegExp.escape/commit/543912584e5cdc59ce399d0b3a523b4de17b359c)
+
 ## [v2.0.0](https://github.com/es-shims/RegExp.escape/compare/v1.1.0...v2.0.0) - 2024-07-08
 
 ### Commits
