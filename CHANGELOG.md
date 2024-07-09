@@ -5,6 +5,38 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.0.0](https://github.com/es-shims/RegExp.escape/compare/v1.1.0...v2.0.0) - 2024-07-08
+
+### Commits
+
+- [Breaking] adapt to latest spec changes [`0674df4`](https://github.com/es-shims/RegExp.escape/commit/0674df4cd040934147e9981d7b549fd0c7ab5720)
+- [Breaking] adapt to latest spec changes [`e73ec2d`](https://github.com/es-shims/RegExp.escape/commit/e73ec2d8a4e13241ab1b6579601a4b7f046a2e3a)
+- [meta] update gitignore [`7d581a5`](https://github.com/es-shims/RegExp.escape/commit/7d581a56145c3a5d74814ab51569aaed7f9392cb)
+- [meta] update URLs [`b1121ed`](https://github.com/es-shims/RegExp.escape/commit/b1121edf1345e238617f49861790956e7a8b79be)
+- [Tests] migrate from travis to github actions [`a16646b`](https://github.com/es-shims/RegExp.escape/commit/a16646be743a2b9c126507e8b335a2e856ffbd5c)
+- [Refactor] update spec to match proposal [`a0d4390`](https://github.com/es-shims/RegExp.escape/commit/a0d43907fe52b950de016b3765f5591766388468)
+- [Tests] refactor the tests to match the actual API - that the output can be used in a regex - not hardcoded escape-checking [`08cfc78`](https://github.com/es-shims/RegExp.escape/commit/08cfc789c76f623607280a6668c5d762fc77ebdf)
+- [readme] fix badges [`5655afd`](https://github.com/es-shims/RegExp.escape/commit/5655afdd65aa8d91c74d364087f14c9139beadf2)
+- [Tests] use `nyc` for coverage [`05c0125`](https://github.com/es-shims/RegExp.escape/commit/05c0125f9c5ea7bd435d361de58cebdb1c14c494)
+- [Dev Deps] update `@es-shims/api`, `@ljharb/eslint-config`, `auto-changelog`, `es5-shim`, `es6-shim`, `eslint`, `foreach`, `safe-publish-latest`, `tape` [`6f46f80`](https://github.com/es-shims/RegExp.escape/commit/6f46f8060eda44d11f9f227a7cf79eb08291b2fc)
+- [actions] remove redundant finisher [`b341478`](https://github.com/es-shims/RegExp.escape/commit/b3414780f70e74ade845261430aa428462759d16)
+- [Deps] update `define-properties`, `es-abstract`; add `call-bind` [`612e7bd`](https://github.com/es-shims/RegExp.escape/commit/612e7bd3c29ff4070dfff0ae1b101d7d86b643dc)
+- [Dev Deps] update `aud`, `auto-changelog`, `tape` [`d04506e`](https://github.com/es-shims/RegExp.escape/commit/d04506e564e8c1a315986bcfbc06b1b6f31a6bca)
+- [Deps] update `call-bind`, `es-abstract`, `safe-regex-test` [`d2c2f3f`](https://github.com/es-shims/RegExp.escape/commit/d2c2f3f5e2d5f2f8e91d208ad3a364c0a874ab08)
+- [Dev Deps] update `@es-shims/api`, `@ljharb/eslint-config`, `aud`, `es6-shim`, `tape` [`ba9ab22`](https://github.com/es-shims/RegExp.escape/commit/ba9ab2287df3381e7001875c5eb8479db7289526)
+- [Dev Deps] update `@es-shims/api`, `@ljharb/eslint-config`, `aud`, `es6-shim`, `tape` [`44d24e8`](https://github.com/es-shims/RegExp.escape/commit/44d24e8d21812c6583a1253e9277742d6c9c0b92)
+- [Dev Deps] update `@ljharb/eslint-config`, `object-inspect`, `tape` [`e7408d5`](https://github.com/es-shims/RegExp.escape/commit/e7408d54af352c5ed09995f592a993c6676e0458)
+- [Dev Deps] update `@es-shims/api`, `aud`, `tape` [`78c5e8b`](https://github.com/es-shims/RegExp.escape/commit/78c5e8b48c1c85c6a0f1d19c8b2fc28c10824fa3)
+- [meta] use `prepublishOnly` [`902a0e6`](https://github.com/es-shims/RegExp.escape/commit/902a0e68460d8b70690d199dd19303716ecda8f3)
+- [Deps] update `call-bind`, `es-abstract` [`854a367`](https://github.com/es-shims/RegExp.escape/commit/854a3674abce957d036b1befd9980b2329a68da7)
+- [Deps] update `define-properties`, `es-abstract` [`6ffcf6a`](https://github.com/es-shims/RegExp.escape/commit/6ffcf6a25b1e86c6117a94c3f7441de4211ef37b)
+- [Tests] use `for-each` instead of `foreach` [`8e7ab04`](https://github.com/es-shims/RegExp.escape/commit/8e7ab04711e6ee2609f99a785f40cd6391f42c59)
+- [Deps] update `es-abstract` [`e661afa`](https://github.com/es-shims/RegExp.escape/commit/e661afa82416733cb5e41e089f944514819efa98)
+- [Deps] update `define-properties`, `es-abstract` [`ed32f79`](https://github.com/es-shims/RegExp.escape/commit/ed32f79d4306a182d7c83ae325c76432d422e55b)
+- [Tests] add an additional test case [`4485ea0`](https://github.com/es-shims/RegExp.escape/commit/4485ea0624092f88c98a08906bf3ca00c8fb9c6e)
+- [Dev Deps] update `tape` [`c06e33d`](https://github.com/es-shims/RegExp.escape/commit/c06e33d33e6e7b65992af03cca89373485e706a2)
+- [Dev Deps] update `tape` [`7b439d3`](https://github.com/es-shims/RegExp.escape/commit/7b439d3e30dab6bdef69e9affb6d5d383a2bbde1)
+
 ## [v1.1.0](https://github.com/es-shims/RegExp.escape/compare/v1.0.2...v1.1.0) - 2020-01-13
 
 ### Commits
